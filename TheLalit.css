@@ -1,0 +1,462 @@
+/*
+        =============== 
+        Fonts
+        ===============
+        */
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+        
+        /*
+          =============== 
+          Variables
+          ===============
+          */
+  
+        :root {
+          /* dark shades of primary color*/
+          --clr-primary-1: hsl(205, 86%, 17%);
+          --clr-primary-2: hsl(205, 77%, 27%);
+          --clr-primary-3: hsl(205, 72%, 37%);
+          --clr-primary-4: hsl(205, 63%, 48%);
+          /* primary/main color */
+          --clr-primary-5: #49a6e9;
+          /* lighter shades of primary color */
+          --clr-primary-6: hsl(205, 89%, 70%);
+          --clr-primary-7: hsl(205, 90%, 76%);
+          --clr-primary-8: hsl(205, 86%, 81%);
+          --clr-primary-9: hsl(205, 90%, 88%);
+          --clr-primary-10: hsl(205, 100%, 96%);
+          /* darkest grey - used for headings */
+          --clr-grey-1: hsl(209, 61%, 16%);
+          --clr-grey-2: hsl(211, 39%, 23%);
+          --clr-grey-3: hsl(209, 34%, 30%);
+          --clr-grey-4: hsl(209, 28%, 39%);
+          /* grey used for paragraphs */
+          --clr-grey-5: hsl(210, 22%, 49%);
+          --clr-grey-6: hsl(209, 23%, 60%);
+          --clr-grey-7: hsl(211, 27%, 70%);
+          --clr-grey-8: hsl(210, 31%, 80%);
+          --clr-grey-9: hsl(212, 33%, 89%);
+          --clr-grey-10: hsl(210, 36%, 96%);
+          --clr-white: #fff;
+          --clr-red-dark: hsl(360, 67%, 44%);
+          --clr-red-light: hsl(360, 71%, 66%);
+          --clr-green-dark: hsl(125, 67%, 44%);
+          --clr-green-light: hsl(125, 71%, 66%);
+          --clr-gold: #c59d5f;
+          --clr-black: #222;
+          --ff-primary: "Roboto", sans-serif;
+          --ff-secondary: "Open Sans", sans-serif;
+          --transition: all 0.3s linear;
+          --spacing: 0.25rem;
+          --radius: 0.5rem;
+          --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          --max-width: 1170px;
+          --fixed-width: 620px;
+        }
+        /*
+          =============== 
+          Global Styles
+          ===============
+          */
+  
+        *,
+        ::after,
+        ::before {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        body {
+          font-family: var(--ff-secondary);
+          background: var(--clr-grey-9);
+          color: var(--clr-grey-1);
+          line-height: 1.5;
+          font-size: 0.875rem;
+        }
+html{
+  scroll-behavior: smooth;
+}
+.top{
+  height: 40px;
+  background-color: rgb(4, 4, 46);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.address{
+    width: 80%;
+    text-align: start;
+    padding-left: 20px;
+}
+.social{
+    width: 25%;
+    text-align: end;
+    margin-right: 50px;
+}
+.social a{
+  color: white;
+  font-size: larger;
+  padding-left: 20px;
+}
+.horizontal {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(255, 149, 0);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 5px solid black;
+}
+.logo-img{
+  width: 40%;
+  height: 40px;
+  margin-left: 50px;
+  margin-right: 60px;
+  display : flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 20px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.h1 {
+  width: 60%;
+  height: 40px;
+  padding-left: 0px;
+  display: flex;
+  justify-content: end;
+  margin-right: 50px;
+  align-items: center;
+}
+.border {
+  color: rgb(9, 11, 76);
+  border: 1px solid transparent;
+  padding: 5px;
+  padding-left: 40px;
+  width: fit-content;
+  font-size: larger;
+}
+.border:hover {
+  color: white;
+}
+.horizontal a{
+  text-decoration: none;
+}
+.Sign-img{
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(Untitled.jpg);
+  background-size: cover;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.images{
+  z-index: 999;
+  height: 80%;
+  width: 60vw;
+  background-image: url(Ambience1.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s ease-in-out;
+}
+.buttons{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+.button{
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  border-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.AboutUs{
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.AboutUs h1{
+  text-align: left;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 30px;
+  margin-bottom: 4vh;
+  margin-top: 7vh
+}
+.data{
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 85%;
+}
+.leftdata{
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+.rightdata:hover img{
+  box-shadow: 9px 9px 15px rgb(255, 149, 0);
+}
+.food-section-container{
+  width: 90vw;
+  height: 90vh;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 5vh;
+}
+.food-section-container h2{
+  font-size: 60px;
+  font-weight: 600;
+  color: rgb(3, 9, 38);
+  font-family:  "Great Vibes", cursive;
+}
+.image-container{
+  width: inherit;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.boxfood{
+  width: 26%;
+  height: 40%;
+  background-size: cover;
+  overflow: hidden;
+}
+.black{
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: translateY(100%);
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+.boxfood:hover .black{
+  animation: move;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  transform: translateY(0);
+}
+@keyframes move {
+  0%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+.box1{
+  background-image: url(Food_New.jpg);
+}
+.box2{
+  background-image: url(SouthBreakfast.jpg);
+}
+.box3{
+  background-image: url(ColdCoffee.jpg);
+}
+.box4{
+  background-image: url(Burger.jpg);
+}
+.box5{
+  background-image: url(OreoDreams.jpg);
+}
+.box6{
+  background-image: url(Chinese.jpg);
+}
+.linebreak{
+  width: 90vw;
+  height: 0.6vh;
+  background-color: black;
+  margin-left: 5vw;
+}
+.container-review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90vw;
+  height: 90vh;
+  margin: 5vh 5vw;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 3px;
+  font-size: 30px;
+  width: 20vw;
+  height: 20vh;
+  margin-bottom: 5px;
+  margin-top: 3vh;
+}
+
+.underline {
+  width: 100px;
+  height: 3px;
+  background-color: rgb(15, 175, 228);
+  margin-top: 3px;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 87vw;
+  height: 70vh;
+}
+.box_review{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #f8f9fc;
+  width: 22vw;
+  height: 60vh;
+}
+.circle {
+  margin: 5vh 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid rgb(136, 222, 230);
+  background-size: cover;
+}
+.boxre1 .circle{
+  background-image: url(luke-peters-B6JINerWMz0-unsplash.jpg);
+}
+.boxre2 .circle{
+  background-image: url(FB_IMG_1501204202828.jpg);
+}
+.boxre3 .circle{
+  background-image: url(Owner.jpg);
+}
+.para {
+  margin-top: 1vh;
+  height: 40vh;
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  letter-spacing: 3px;
+}
+
+.para h6 {
+  letter-spacing : 4px;
+  font-size: 10px;
+  color: rgb(39, 87, 219);
+}
+.space{
+  height: 0.5vh;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 3vh;
+  width: 18vw;
+  margin-bottom: 2vh;
+}
+.paragraph{
+  text-align: center;
+  height: 30vh;
+  width: inherit;
+}
+.block .buttons .button{
+  color: rgb(7, 7, 56);
+} 
+.foot{
+  padding-top: 20px;
+  background-color: black;
+  color: white;
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 20px;
+}
+.foot p:nth-child(1){
+  padding-bottom: 5px;
+  display: inline;
+}
+.foot h2{
+  padding-bottom: 10px;
+}
+.foot ul{
+  list-style-type: none;
+  padding: 10px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+}
+.foot ul h4{
+  text-align: start;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.foot h4{
+  padding-top: 30px;
+}
+.foot-panel4{
+  background-color: #0f1111;
+  color: white;
+  height:80px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.foot-panel4 a{
+  text-decoration: none;
+  color: white;
+}
+.pages{
+  font-size: 0.7rem;
+  text-align: center;
+  padding-top: 25px;
+}
+.copyright{
+  font-size: 0.7rem;
+  text-align: center;
+  padding-top: 5px;
+}
